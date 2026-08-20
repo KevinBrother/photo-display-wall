@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your photos in a stunning, interactive wall layout that captivates viewers with a modern, dynamic aesthetic, perfect for artists and photographers.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

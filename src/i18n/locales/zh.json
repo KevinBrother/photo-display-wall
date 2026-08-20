@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "gallery": "图库",
+    "studio": "工作室",
+    "work": "作品",
+    "pricing": "充值",
+    "archive": "档案",
+    "stats": "统计",
+    "generate": "生成",
+    "models": "模型",
+    "status": "状态",
+    "account": "账户",
+    "keys": "密钥",
+    "notices": "公告",
+    "about": "关于我们",
+    "terms": "用户协议",
+    "privacy": "隐私政策"
+  },
+  "theme": {
+    "switch": "切换主题",
+    "select": "选择主题"
+  },
+  "home": {
+    "frames": "张照片",
+    "hover": "悬停以查看",
+    "scroll": "滚动以探索"
+  },
+  "doc": {
+    "effective": "生效日期 ",
+    "lastUpdated": "最后更新 ",
+    "contents": "目录",
+    "legal": "法律 · ",
+    "questions": "对本文档有疑问？",
+    "contact": "请发送邮件至",
+    "security": "。安全相关事项请联系",
+    "period": "。"
+  },
+  "models": {
+    "title": "模型",
+    "subtitle": "探索我们为满足不同性能和效率需求而设计的多模态模型套件。",
+    "params": "参数量",
+    "context": "上下文窗口",
+    "training": "训练数据",
+    "flagship": "旗舰",
+    "flagshipDesc": "最强能力与推理深度",
+    "standard": "标准",
+    "standardDesc": "生产环境最优性价比",
+    "efficient": "高效",
+    "efficientDesc": "高吞吐、低延迟场景",
+    "new": "全新"
+  },
+  "notices": {
+    "title": "平台\n公告",
+    "subtitle": "重要更新、维护窗口及故障报告。",
+    "empty": "此分类下无公告。",
+    "type": {
+      "all": "全部",
+      "feature": "新功能",
+      "pricing": "定价",
+      "maintenance": "维护",
+      "incident": "故障",
+      "security": "安全"
+    }
+  },
+  "terms": {
+    "category": "用户协议",
+    "title": "用户\n协议",
+    "subtitle": "使用 AXIS 平台前请仔细阅读。",
+    "effective": "2026 年 1 月 1 日",
+    "updated": "2026 年 8 月 1 日"
+  },
+  "privacy": {
+    "category": "隐私政策",
+    "title": "隐私\n政策",
+    "subtitle": "我们如何收集、使用和保护您的个人数据。符合 GDPR 规定。",
+    "effective": "2026 年 1 月 1 日",
+    "updated": "2026 年 8 月 1 日"
+  }
+}

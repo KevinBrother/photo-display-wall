@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+/* Theme CSS custom properties — set dynamically by ThemeContext */
+:root {
+  --bg: #f7f4ef;
+  --surface: #ffffff;
+  --fg: #0a0a0a;
+  --fg-rgb: 10, 10, 10;
+  --border-rgb: 0, 0, 0;
+  --nav-blur: rgba(247,244,239,0.94);
+  --glow-a: rgba(0,0,0,0);
+  --glow-b: rgba(0,0,0,0);
+}
+
+@theme {
+  --font-display: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: #080808;
+  color: #f0ece4;
+}
+
+.photo-card {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease, z-index 0s;
+}
+
+.photo-card:hover {
+  z-index: 100 !important;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(var(--base-rot)); }
+  50% { transform: translateY(-8px) rotate(var(--base-rot)); }
+}
+
+@keyframes drift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }

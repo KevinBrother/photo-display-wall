@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "gallery": "Gallery",
+    "studio": "Studio",
+    "work": "Work",
+    "pricing": "Pricing",
+    "archive": "Archive",
+    "stats": "Stats",
+    "generate": "Generate",
+    "models": "Models",
+    "status": "Status",
+    "account": "Account",
+    "keys": "Keys",
+    "notices": "Notices",
+    "about": "About",
+    "terms": "Terms",
+    "privacy": "Privacy"
+  },
+  "theme": {
+    "switch": "Switch theme",
+    "select": "Select theme"
+  },
+  "home": {
+    "frames": "frames",
+    "hover": "Hover to focus",
+    "scroll": "Scroll to explore"
+  },
+  "doc": {
+    "effective": "Effective ",
+    "lastUpdated": "Last updated ",
+    "contents": "Contents",
+    "legal": "Legal · ",
+    "questions": "Questions about this document?",
+    "contact": "Contact us at",
+    "security": ". For security-related inquiries, use",
+    "period": "."
+  },
+  "models": {
+    "title": "Models",
+    "subtitle": "Discover our suite of multimodal models designed for varying performance and efficiency needs.",
+    "params": "PARAMS",
+    "context": "CONTEXT WINDOW",
+    "training": "TRAINING DATA",
+    "flagship": "Flagship",
+    "flagshipDesc": "Maximum capability and reasoning depth",
+    "standard": "Standard",
+    "standardDesc": "Best performance-to-cost for production",
+    "efficient": "Efficient",
+    "efficientDesc": "High-throughput, latency-sensitive workloads",
+    "new": "NEW"
+  },
+  "notices": {
+    "title": "Platform\nNotices",
+    "subtitle": "Important updates, maintenance windows, and incident reports.",
+    "empty": "No notices in this category.",
+    "type": {
+      "all": "All",
+      "feature": "Features",
+      "pricing": "Pricing",
+      "maintenance": "Maintenance",
+      "incident": "Incidents",
+      "security": "Security"
+    }
+  },
+  "terms": {
+    "category": "Terms of Service",
+    "title": "User\nAgreement",
+    "subtitle": "Please read carefully before using the AXIS platform.",
+    "effective": "January 1, 2026",
+    "updated": "August 1, 2026"
+  },
+  "privacy": {
+    "category": "Privacy Policy",
+    "title": "Privacy\nPolicy",
+    "subtitle": "How we collect, use, and protect your personal data. GDPR compliant.",
+    "effective": "January 1, 2026",
+    "updated": "August 1, 2026"
+  }
+}

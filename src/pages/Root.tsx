@@ -33,6 +33,15 @@ export default function Root() {
   const lang = i18n.language
   const toggleLang = () => i18n.changeLanguage(lang === 'zh' ? 'en' : 'zh')
 
+  const THEME_I18N: Record<string, { nameZh: string, labelZh: string }> = {
+    chalk: { nameZh: '粉笔', labelZh: '明亮极简' },
+    ink: { nameZh: '水墨', labelZh: '粗野纸张' },
+    dune: { nameZh: '沙丘', labelZh: '沙漠暖意' },
+    sage: { nameZh: '鼠尾草', labelZh: '淡雅植物' },
+    glacier: { nameZh: '冰川', labelZh: '极地冷感' },
+    rose: { nameZh: '玫瑰', labelZh: '尘感排版' },
+  }
+
   useEffect(() => {
     const el = document.querySelector('main')
     if (!el) return
@@ -250,7 +259,7 @@ export default function Root() {
               <span style={{ display: 'flex', alignItems: 'center', gap: 3 }}>
                 <span style={{ width: 10, height: 10, borderRadius: '50%', background: theme.swatch, border: `1px solid rgba(var(--border-rgb),0.2)`, boxShadow: `inset 0 0 0 2px ${theme.swatchAccent}40`, flexShrink: 0 }} />
                 <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, letterSpacing: '0.12em', textTransform: 'uppercase', color: `rgba(var(--fg-rgb),0.5)` }}>
-                  {theme.name}
+                  {lang === 'zh' ? THEME_I18N[theme.id]?.nameZh || theme.name : theme.name}
                 </span>
               </span>
               <svg width="8" height="5" viewBox="0 0 8 5" fill="none" style={{ opacity: 0.4, transform: pickerOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s ease' }}>
@@ -300,8 +309,12 @@ export default function Root() {
                       <span style={{ position: 'absolute', bottom: 3, right: 4, width: 6, height: 6, borderRadius: '50%', background: tOption.swatchAccent }} />
                     </span>
                     <span style={{ flex: 1 }}>
-                      <span style={{ display: 'block', fontFamily: "'Outfit', sans-serif", fontSize: 13, fontWeight: 600, color: 'var(--fg)', letterSpacing: '-0.01em' }}>{tOption.name}</span>
-                      <span style={{ display: 'block', fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: `rgba(var(--fg-rgb),0.35)`, letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: 1 }}>{tOption.label}</span>
+                      <span style={{ display: 'block', fontFamily: "'Outfit', sans-serif", fontSize: 13, fontWeight: 600, color: 'var(--fg)', letterSpacing: '-0.01em' }}>
+                        {lang === 'zh' ? THEME_I18N[tOption.id]?.nameZh || tOption.name : tOption.name}
+                      </span>
+                      <span style={{ display: 'block', fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: `rgba(var(--fg-rgb),0.35)`, letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: 1 }}>
+                        {lang === 'zh' ? THEME_I18N[tOption.id]?.labelZh || tOption.label : tOption.label}
+                      </span>
                     </span>
                     {theme.id === tOption.id && (
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none">

@@ -11,11 +11,12 @@ const NAV_ITEMS = [
   { to: '/photos',    key: 'nav.archive',  index: '05' },
   { to: '/stats',     key: 'nav.stats',    index: '06' },
   { to: '/generate',  key: 'nav.generate', index: '07' },
-  { to: '/models',    key: 'nav.models',   index: '08' },
-  { to: '/status',    key: 'nav.status',   index: '09' },
-  { to: '/account',   key: 'nav.account',  index: '10' },
-  { to: '/keys',      key: 'nav.keys',     index: '11' },
-  { to: '/notices',   key: 'nav.notices',  index: '12' },
+  { to: '/music',     key: 'nav.music',    index: '08' },
+  { to: '/models',    key: 'nav.models',   index: '09' },
+  { to: '/status',    key: 'nav.status',   index: '10' },
+  { to: '/account',   key: 'nav.account',  index: '11' },
+  { to: '/keys',      key: 'nav.keys',     index: '12' },
+  { to: '/notices',   key: 'nav.notices',  index: '13' },
 ]
 
 export default function Root() {

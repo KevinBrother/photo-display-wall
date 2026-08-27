@@ -10,6 +10,7 @@ import Account from './pages/Account'
 import Keys from './pages/Keys'
 import Models from './pages/Models'
 import Generate from './pages/Generate'
+import Music from './pages/Music'
 import Notices from './pages/Notices'
 import About from './pages/About'
 import Terms from './pages/Terms'
@@ -33,6 +34,7 @@ export const router = createBrowserRouter([
       { path: 'keys', Component: Keys },
       { path: 'models', Component: Models },
       { path: 'generate', Component: Generate },
+      { path: 'music', Component: Music },
       { path: 'notices', Component: Notices },
       { path: 'about', Component: About },
       { path: 'terms', Component: Terms },
